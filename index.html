@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en" class="h-100">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Green Api | Test</title>
+  </head>
+  <body class="h-100 bg-light">
+    <div class="d-flex flex-column h-100">
+      <main class="flex-fill">
+        <section class="py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col col-4">
+                <header class="visually-hidden">
+                  <h1>Green Api Test</h1>
+                </header>
+                <form id="form-api">
+                  <div>
+                    <label for="idInstance" class="form-label"
+                      >idInstance</label
+                    >
+                    <input
+                      id="idInstance"
+                      name="idInstance"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <label for="apiTokenInstance" class="form-label"
+                      >ApiTokenInstance</label
+                    >
+                    <input
+                      id="apiTokenInstance"
+                      name="apiTokenInstance"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <button
+                      id="getSettings"
+                      type="button"
+                      class="btn btn-primary w-100"
+                    >
+                      getSettings
+                    </button>
+                  </div>
+                  <div class="mt-3">
+                    <button type="button" class="btn btn-primary w-100">
+                      getStateInstance
+                    </button>
+                  </div>
+                </form>
+                <form id="form-message" class="mt-5">
+                  <div class="mt-3">
+                    <label for="number" class="form-label">Number</label>
+                    <input
+                      id="number"
+                      inputmode="tel"
+                      type="tel"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea
+                      id="message"
+                      class="form-control"
+                      rows="3"
+                    ></textarea>
+                  </div>
+                  <div class="mt-3">
+                    <button type="button" class="btn btn-primary w-100">
+                      sendMessage
+                    </button>
+                  </div>
+                </form>
+                <form id="form-img-url" class="mt-5">
+                  <div class="mt-3">
+                    <label for="numberForImgUpload" class="form-label"
+                      >Number</label
+                    >
+                    <input
+                      id="numberForImgUpload"
+                      inputmode="tel"
+                      type="tel"
+                      class="form-control"
+                    />
+                  </div>
+                  <div class="mt-3">
+                    <label for="imgUrl" class="form-label">imgUrl</label>
+                    <input id="imgUrl" class="form-control" />
+                  </div>
+                  <div class="mt-3">
+                    <button type="button" class="btn btn-primary w-100">
+                      sendFileByUrl
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
