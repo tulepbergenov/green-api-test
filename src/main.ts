@@ -1,4 +1,5 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./index.css";
 
 const getFormValues = (formId: string): { [key: string]: any } | undefined => {
   try {
