@@ -32,6 +32,7 @@
                       >idInstance</label
                     >
                     <input
+                      value="7103960274"
                       id="idInstance"
                       name="idInstance"
                       class="form-control"
@@ -42,6 +43,7 @@
                       >ApiTokenInstance</label
                     >
                     <input
+                      value="b7173ef8779c42f9963d46bd07773e36b1dfea7731ea4948a9"
                       id="apiTokenInstance"
                       name="apiTokenInstance"
                       class="form-control"
@@ -57,19 +59,25 @@
                     </button>
                   </div>
                   <div class="mt-3">
-                    <button type="button" class="btn btn-primary w-100">
+                    <button
+                      id="getStateInstance"
+                      type="button"
+                      class="btn btn-primary w-100"
+                    >
                       getStateInstance
                     </button>
                   </div>
                 </form>
-                <form id="form-message" class="mt-5">
+                <form id="form-send-message" class="mt-5">
                   <div class="mt-3">
                     <label for="number" class="form-label">Number</label>
                     <input
                       id="number"
                       inputmode="tel"
                       type="tel"
+                      name="number"
                       class="form-control"
+                      placeholder="77719324238"
                     />
                   </div>
                   <div class="mt-3">
@@ -77,11 +85,16 @@
                     <textarea
                       id="message"
                       class="form-control"
+                      name="message"
                       rows="3"
                     ></textarea>
                   </div>
                   <div class="mt-3">
-                    <button type="button" class="btn btn-primary w-100">
+                    <button
+                      id="sendMessage"
+                      type="button"
+                      class="btn btn-primary w-100"
+                    >
                       sendMessage
                     </button>
                   </div>
@@ -94,18 +107,42 @@
                     <input
                       id="numberForImgUpload"
                       inputmode="tel"
+                      name="number"
                       type="tel"
                       class="form-control"
+                      placeholder="77719324238"
                     />
                   </div>
                   <div class="mt-3">
                     <label for="imgUrl" class="form-label">imgUrl</label>
-                    <input id="imgUrl" class="form-control" />
+                    <input
+                      id="imgUrl"
+                      name="imgUrl"
+                      class="form-control"
+                      placeholder="https://i.natgeofe.com/n/img/cat.jpg"
+                    />
                   </div>
                   <div class="mt-3">
-                    <button type="button" class="btn btn-primary w-100">
+                    <button
+                      id="sendFileByUrl"
+                      type="button"
+                      class="btn btn-primary w-100"
+                    >
                       sendFileByUrl
                     </button>
+                  </div>
+                </form>
+              </div>
+              <div class="col col-8">
+                <form>
+                  <div>
+                    <label for="response" class="form-label">Ответ</label>
+                    <textarea
+                      id="response"
+                      class="form-control"
+                      rows="20"
+                      readonly
+                    ></textarea>
                   </div>
                 </form>
               </div>
